@@ -1,0 +1,141 @@
+\documentclass{article}
+
+% If you don't need a package and don't know what it does, don't add it.
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\usepackage{hyperref}
+\usepackage{gensymb}
+
+
+\begin{document}
+
+\noindent
+\textbf{MEAM 620 Advanced Robotics}\hfill\textbf{Project 0}\\
+{University of Pennsylvania, Spring 2023}\hfill{updated \today}\\
+\textit{Student Name: your name}\hfill{\textit{Penn ID: your penn id}}\\
+\hrule\bigskip
+
+\begin{enumerate}
+
+\item \textbf{Homogeneous Transforms} (20 points)
+
+\begin{enumerate}
+    \item 
+    
+    \\
+    *some useful matrix templates: 
+    \begin{gather*}
+    \begin{bmatrix}
+    ^Ap\\1
+    \end{bmatrix}=
+    T_1
+    \begin{bmatrix}
+    ^Bp\\1
+    \end{bmatrix}
+    \qquad
+    \begin{bmatrix}
+    ^Bp\\1
+    \end{bmatrix}=
+    T_2
+    \begin{bmatrix}
+    ^Cp\\1
+    \end{bmatrix}
+    \qquad
+\end{gather*}\\
+    
+    \[M = \begin{bmatrix}
+    \cos(x) & \sin(y) & x & y\\
+    x & y & z & w\\
+    0 & 0 & 0 & 0\\
+    0 & 0 & 0 & 1\\
+    \end{bmatrix}\]\\
+    \begin{align*}
+        M_{1} M_{2} &= \begin{bmatrix}
+                    \cos(x) & \sin(y) & x \\
+                    x & y & z \\
+                    0 & 0 & 0 \\
+                    \end{bmatrix}
+                    \begin{bmatrix}
+                    \sin(x) & \cos(y) & x \\
+                    x & y & z \\
+                    0 & 0 & 0 \\
+                    \end{bmatrix}\\
+                    &= \begin{bmatrix}
+                    0 & 0 & 1 \\
+                    1 & 1 & 1 \\
+                    0 & 0 & 0 \\
+                    \end{bmatrix}
+    \end{align*}\\
+
+    $T_1$ = 
+    
+    \item
+    \\
+    $T_2$ = 
+
+    
+    \item
+    \\
+    $T_3$ = 
+    
+\end{enumerate}
+
+
+
+\item \textbf{Rotation Matrix Sudoku} (30 points)
+\\
+*Note: Show your work to receive partial credit. You may show your math or include a code segment. 
+
+
+\item \textbf{Rodrigues' Formula} (20 points)
+
+\begin{enumerate}
+    \item
+
+
+    \item
+
+
+\end{enumerate}
+
+
+
+
+% \newpage
+
+\item \textbf{Transforms and and Python Plotting} (30 points)
+
+
+
+
+*Note: All angles in this problem are in radians!
+
+\begin{enumerate}
+
+    \item 
+    $v(t)$ = 
+    
+    % Compute, as a function of time, the linear velocity $v(t)$ of the robot in the world frame. (5 points)
+    
+    
+    \item 
+    $^Ap(t)$ = 
+    
+    \item 
+    
+    
+    \item 
+    
+
+\end{enumerate}
+
+
+\end{enumerate}
+\end{document}
