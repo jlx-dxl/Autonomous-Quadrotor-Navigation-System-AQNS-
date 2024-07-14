@@ -22,7 +22,10 @@ from proj1_3.code.world_traj import WorldTraj
 # mpl.rcParams['figure.dpi'] = 200
 
 # Choose a test example file. You should write your own example files too!
-filename = '../util/test_window.json'
+# filename = '../util/test_over_under.json'
+filename = '../util/test_maze.json'
+# filename = '../util/maze_2024_3.json'
+# filename = '../util/my_map.json'
 
 # Load the test example.
 file = Path(inspect.getsourcefile(lambda:0)).parent.resolve() / '..' / 'util' / filename
@@ -32,7 +35,7 @@ goal   = world.world['goal']           # Goal point, shape=(3,)
 
 # This object defines the quadrotor dynamical model and should not be changed.
 quadrotor = Quadrotor(quad_params)
-robot_radius = 0.25
+robot_radius = 0.05
 
 # Your SE3Control object (from project 1-1).
 my_se3_control = SE3Control(quad_params)

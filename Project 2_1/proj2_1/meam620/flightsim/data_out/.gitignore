@@ -1,0 +1,4 @@
+# Never commit output data.
+*.mp4
+*.json
+*.pdf
