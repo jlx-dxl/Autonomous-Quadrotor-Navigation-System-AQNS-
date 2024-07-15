@@ -3,8 +3,8 @@
 ### Demo 
 
 <div style="display: flex; flex-direction: row; justify-content: space-between;">
-  <img src="demo.gif" alt="GIF 1" style="width: 48%; margin-right: 1%;">
-  <img src="real.gif" alt="GIF 2" style="width: 48%;">
+  <img src="demo.gif" alt="GIF 1" style="width: 100%; margin-right: 1%;">
+  <img src="real.gif" alt="GIF 2" style="width: 100%;">
 </div>
 
 ### Project Overview
